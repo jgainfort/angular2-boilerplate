@@ -1,1 +1,8 @@
 node_modules/
+.vscode/
+typings/
+src/client/app/**/*.js
+src/client/app/**/*.js.map
+src/client/jspm_packages
+src/server/**/*.js
+src/server/**/*.js.map
