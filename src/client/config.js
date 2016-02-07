@@ -7,16 +7,19 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "app": "/src/client/app"
   },
+
   packages: {
-    app: {
-      main: "main",
-      defaultExtension: "js"
+    "app": {
+      "main": "main",
+      "defaultExtension": "js"
     }
   },
 
   map: {
     "angular2": "npm:angular2@2.0.0-beta.3",
+    "css": "github:systemjs/plugin-css@0.1.20",
     "es6-shim": "github:es-shims/es6-shim@0.34.2",
+    "jasmine-core": "npm:jasmine-core@2.4.1",
     "reflect-metadata": "npm:reflect-metadata@0.1.3",
     "typescript": "npm:typescript@1.8.0",
     "zone.js": "npm:zone.js@0.5.13",
@@ -214,6 +217,11 @@ System.config({
     },
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
+    },
+    "npm:jasmine-core@2.4.1": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:miller-rabin@4.0.0": {
       "bn.js": "npm:bn.js@4.10.1",

@@ -1,8 +1,13 @@
 import {Component} from 'angular2/core';
 
+import {HeroComponent} from './hero/hero.component';
+
 @Component({
     selector: 'my-app',
-    template: `<h1>My First Angular2 App</h1>`
+    templateUrl: 'app/components/app.html',
+    directives: [HeroComponent]
 })
 
-export class AppComponent { }
+export class AppComponent {
+    public title: string = 'Tour of Heroes';
+}
